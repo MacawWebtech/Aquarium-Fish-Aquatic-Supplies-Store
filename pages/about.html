@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Aquatic</title>
+<meta name="description" content="Aquatic has been a specialist aquarium store since 2008. Read our story, our livestock promise, and why hobbyists trust us with their tanks.">
+<link rel="canonical" href="https://www.aquaticandco.example/pages/about.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About Us | Aquatic">
+<meta property="og:description" content="A specialist aquarium store for freshwater, marine and planted-tank keepers since 2008.">
+<meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/125L_planted_tank.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+
+<link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="container-wide topbar-inner">
+    <span class="topbar-note"><i class="bi bi-droplet-half"></i> Live arrivals every Thursday<span class="topbar-note-long"> &mdash; guaranteed healthy on delivery</span></span>
+    <div class="topbar-links">
+      <a href="tel:+15550142"><i class="bi bi-telephone"></i> +1 555 0142</a>
+      <span class="topbar-sep"></span>
+      <span class="topbar-hours"><i class="bi bi-clock"></i> Mon&ndash;Sat, 10am&ndash;7pm</span>
+      <span class="topbar-sep"></span>
+      <span class="topbar-social">
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container-wide header-inner">
+    <a href="../index.html" class="brand"><img src="../assets/images/logo.png" alt="Aquatic" class="brand-logo"></a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <div class="nav-item has-dropdown">
+        <button type="button" class="nav-link" data-dropdown-toggle aria-expanded="false" aria-haspopup="true">
+          Home <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </button>
+        <div class="nav-dropdown">
+          <a href="../index.html" class="home-card">
+            <span class="home-card-thumb"><img src="../assets/images/banner.jpg" alt="" loading="lazy"></span>
+            <span class="home-card-text"><strong>Home Page 1</strong><span>Reef hero with live tank stats</span></span>
+          </a>
+          <a href="../home-2.html" class="home-card">
+            <span class="home-card-thumb"><img src="../assets/images/banner1.jpg" alt="" loading="lazy"></span>
+            <span class="home-card-text"><strong>Home Page 2</strong><span>Split layout with featured species</span></span>
+          </a>
+        </div>
+      </div>
+      <a href="about.html" class="active">About</a>
+      <a href="fish.html">Fish</a>
+      <a href="plants.html">Aquatic Plants</a>
+      <a href="equipment.html">Equipment</a>
+      <a href="blog.html">Care Guides</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn search-toggle" data-search-toggle aria-label="Search" aria-expanded="false" aria-controls="headerSearch"><i class="bi bi-search"></i></button>
+      <button class="icon-btn wishlist-btn" aria-label="Wishlist"><i class="bi bi-heart"></i><span class="icon-badge">2</span></button>
+      <button class="icon-btn bag-btn" aria-label="Your order, 3 items" data-bag><i class="bi bi-bag"></i><span class="icon-badge" data-bag-count>3</span></button>
+      <button class="icon-btn theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+        <i class="bi bi-sun-fill" aria-hidden="true"></i>
+        <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+      </button>
+      <a href="login.html#signup" class="btn btn-primary btn-sm header-cta">Sign up</a>
+      <button class="rtl-toggle" type="button" data-rtl-toggle aria-pressed="false">RTL</button>
+      <button class="icon-btn menu-btn" data-menu-open aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <i class="bi bi-list" style="font-size:1.5rem"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="header-search" id="headerSearch" data-search-panel>
+    <div class="header-search-inner">
+      <div class="container-wide">
+        <form role="search" onsubmit="return false;">
+          <input type="search" name="q" placeholder="Search fish, plants, tanks or filters" aria-label="Search the store">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+  <div class="mobile-nav-top">
+    <span class="brand"><img src="../assets/images/logo.png" alt="Aquatic" class="brand-logo"></span>
+    <button class="icon-btn" data-menu-close aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+  </div>
+
+  <button type="button" class="m-sub-toggle" data-sub-toggle aria-expanded="false">
+    Home <i class="bi bi-chevron-down" aria-hidden="true"></i>
+  </button>
+  <div class="mobile-sub">
+    <div>
+      <a href="../index.html" class="">Home Page 1</a>
+      <a href="../home-2.html" class="">Home Page 2</a>
+    </div>
+  </div>
+
+  <a href="about.html">About</a>
+  <a href="fish.html">Fish</a>
+  <a href="plants.html">Aquatic Plants</a>
+  <a href="equipment.html">Equipment</a>
+  <a href="blog.html">Care Guides</a>
+  <a href="contact.html">Contact</a>
+
+  <div class="mobile-actions">
+    <a href="login.html#signup" class="btn btn-primary btn-sm">Sign up</a>
+    <a href="tel:+15550142" class="btn btn-outline btn-sm m-call"><i class="bi bi-telephone"></i> Call the store</a>
+  </div>
+</nav>
+
+<main id="main">
+ <section class="page-hero">
+    <div class="container-wide">
+      <div class="crumbs"><a href="../index.html">Home</a> / About</div>
+      <span class="eyebrow">Our Story</span>
+      <h1 class="font-display" style="font-size:var(--fs-h1); margin-top:.75rem;">More Than a Fish Store.<br>A Place for Living Worlds.</h1>
+      <p style="margin-top:.75rem; max-width:560px; font-size:1.05rem;">Since 2008 we've helped beginners set up their first ten-gallon tank and helped seasoned reefers track down the one coral they've been chasing for years.</p>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY / PROMISE / RESPONSIBLE KEEPING -->
+  <section class="section" style="background:var(--surface-2)" aria-labelledby="values-heading">
+    <div class="container-wide">
+      <div class="section-head reveal">
+        <span class="eyebrow">What Guides Us</span>
+        <h2 id="values-heading">Our Philosophy</h2>
+      </div>
+      <div class="value-row reveal">
+        <div class="value-card">
+          <i class="bi bi-heart-pulse"></i>
+          <h3 style="font-size:1.1rem; font-family:var(--font-body); font-weight:700;">Healthy Livestock Promise</h3>
+          <p style="margin-top:.6rem; font-size:.94rem;">Every fish is quarantined and observed before it reaches the sales floor. We'd rather delay a delivery than sell a fish we're not confident in.</p>
+        </div>
+        <div class="value-card">
+          <i class="bi bi-shield-check"></i>
+          <h3 style="font-size:1.1rem; font-family:var(--font-body); font-weight:700;">Responsible Aquarium Keeping</h3>
+          <p style="margin-top:.6rem; font-size:.94rem;">We only stock species we're prepared to give honest care advice for, and we'll tell you when a fish is a poor fit for your setup.</p>
+        </div>
+        <div class="value-card">
+          <i class="bi bi-people"></i>
+          <h3 style="font-size:1.1rem; font-family:var(--font-body); font-weight:700;">Why Hobbyists Trust Us</h3>
+          <p style="margin-top:.6rem; font-size:.94rem;">Our staff keep their own tanks at home — freshwater, marine and planted — so the advice you get is tested in our own living rooms first.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- OUR STORY -->
+  <section class="section" aria-labelledby="story-heading">
+    <div class="container-wide story-grid">
+      <div class="story-media reveal">
+        <img src="../assets/images/story.jpg" alt="A mature, densely planted home aquarium">
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Where We Started</span>
+        <h2 id="story-heading">Our Story</h2>
+        <p style="margin-top:1rem;">Aquatic opened as a single row of tanks in the back of a garden centre. The owners were hobbyists first — a planted-tank enthusiast and a marine aquarist who kept arguing over shelf space until they realised the shop should just carry both.</p>
+        <p style="margin-top:1rem;">Nearly two decades later, the argument is still going, and the shop is better for it: one wall for lush aquascapes, the other for reef-ready livestock, and a staff that genuinely can't agree on which is more interesting.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- TEAM -->
+  <section class="section" aria-labelledby="team-heading">
+    <div class="container-wide story-grid">
+      <div class="reveal" style="order:2;">
+        <span class="eyebrow">Behind the Counter</span>
+        <h2 id="team-heading">Our Team</h2>
+        <p style="margin-top:1rem;">We're a small crew of aquarists, aquascapers and one very patient marine specialist who fields most of the reef questions. Between us we've kept everything from breeding colonies of cherry shrimp to a 300-gallon SPS reef, and we're always happy to talk through what's swimming in your tank.</p>
+      </div>
+      <div class="story-media reveal" style="order:1;">
+        <img src="../assets/images/team.jpg" alt="A well-stocked community aquarium on display in the shop">
+      </div>
+    </div>
+
+    <!-- TEAM GRID -->
+    <div class="container-wide" style="margin-top:clamp(2.5rem,5vw,3.5rem);">
+      <div class="team-grid reveal">
+        <div class="member-card">
+          <div class="member-avatar"><img src="../assets/images/team1.jpg" alt="Maren Osei"></div>
+          <h3>Maren Osei</h3>
+          <span class="member-role">Founder &amp; Head Aquarist</span>
+          <p>Started the shop in 2008 and still does the Monday morning water tests herself.</p>
+          <div class="member-tags"><span class="chip">Freshwater</span><span class="chip">Planted Tanks</span></div>
+        </div>
+        <div class="member-card">
+          <div class="member-avatar"><img src="../assets/images/team2.jpg" alt="Tobias Lindqvist"></div>
+          <h3>Tobias Lindqvist</h3>
+          <span class="member-role">Marine Systems Specialist</span>
+          <p>Keeps our reef displays stable and fields most of the trickier saltwater questions.</p>
+          <div class="member-tags"><span class="chip">Marine</span><span class="chip">Reef Chemistry</span></div>
+        </div>
+        <div class="member-card">
+          <div class="member-avatar"><img src="../assets/images/team3.jpg" alt="Priya Anand"></div>
+          <h3>Priya Anand</h3>
+          <span class="member-role">Aquascaping Lead</span>
+          <p>Designs the showroom layouts and writes most of our Care Guides articles.</p>
+          <div class="member-tags"><span class="chip">Aquascaping</span><span class="chip">Hardscape</span></div>
+        </div>
+        <div class="member-card">
+          <div class="member-avatar"><img src="../assets/images/team4.jpg" alt="Jonas Feldt"></div>
+          <h3>Jonas Feldt</h3>
+          <span class="member-role">Livestock &amp; Quarantine Manager</span>
+          <p>Every fish passes his health check before it's cleared for the sales floor.</p>
+          <div class="member-tags"><span class="chip">Quarantine</span><span class="chip">Fish Health</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section" style="background:var(--surface-2)" aria-labelledby="timeline-heading">
+    <div class="container-wide">
+      <div class="section-head reveal">
+        <span class="eyebrow">Two Decades In</span>
+        <h2 id="timeline-heading">Our History</h2>
+      </div>
+      <div class="history-track reveal">
+        <div class="history-line" aria-hidden="true"></div>
+        <div class="history-item">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="yr">2008</span>
+          <h4>A Single Row of Tanks</h4>
+          <p>Aquatic opens inside a garden centre with a dozen freshwater community tanks.</p>
+        </div>
+        <div class="history-item">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="yr">2013</span>
+          <h4>First Marine System</h4>
+          <p>We add our first reef displays and bring on a dedicated marine specialist.</p>
+        </div>
+        <div class="history-item">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="yr">2017</span>
+          <h4>The Aquascaping Wall</h4>
+          <p>A planted-tank showroom opens, built around live aquascaping demonstrations.</p>
+        </div>
+        <div class="history-item">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="yr">2022</span>
+          <h4>Special Order Program</h4>
+          <p>We formalise special ordering so hobbyists can request specific species and equipment.</p>
+        </div>
+        <div class="history-item">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="yr">Today</span>
+          <h4>Still Arguing About Shelf</h4>
+          <p>Freshwater, marine and planted-tank hobbyists all under one roof — and a waitlist for  driftwood.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="consult-card reveal">
+      <div class="consult-copy">
+        <span class="eyebrow" style="color:var(--clr-accent)">Come Say Hello</span>
+        <h2>Visit the Showroom.</h2>
+        <p>Walk the aquascaping wall, meet the reef, and let us know what your tank needs.</p>
+        <div class="consult-ctas">
+          <a href="contact.html" class="btn btn-ghost-light">Get Directions</a>
+          <a href="../index.html" class="btn btn-outline" style="border-color:rgba(255,255,255,.5); color:#fff;">Explore the Collection</a>
+        </div>
+      </div>
+      <div class="consult-media">
+        <img src="../assets/images/ready.jpg" alt="Rows of aquarium tanks on display in the store">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container-wide footer-top">
+    <div class="footer-brand">
+      <span class="brand footer-brand-logo"><img src="../assets/images/logo.png" alt="Aquatic" class="brand-logo"></span>
+      <p>A specialist store for aquarium fish, aquatic plants and tank supplies — freshwater, marine and planted, since 2008.</p>
+      <span class="footer-social-label">Follow us</span>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Aquatic on Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Aquatic on Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Aquatic on YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="Aquatic on TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.pinterest.com/" target="_blank" rel="noopener" aria-label="Aquatic on Pinterest"><i class="bi bi-pinterest"></i></a>
+        <a href="https://wa.me/15550142" target="_blank" rel="noopener" aria-label="Message Aquatic on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+    <div>
+      <h5>Shop</h5>
+      <a href="fish.html">Aquarium Fish</a>
+      <a href="plants.html">Aquatic Plants</a>
+      <a href="equipment.html">Tanks &amp; Equipment</a>
+      <a href="equipment.html#testing">Water Care</a>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Care Guides</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h5>Orders</h5>
+      <a href="contact.html">Delivery &amp; Pickup</a>
+      <a href="contact.html#special-order">Special Orders</a>
+      <a href="contact.html">Live Arrival Guarantee</a>
+      <a href="login.html">My Account</a>
+    </div>
+    <div class="footer-contact">
+      <h5>Contact</h5>
+      <a href="https://maps.google.com/?q=42+Harbour+Lane+Portside+CA+90001" target="_blank" rel="noopener"><i class="bi bi-geo-alt" aria-hidden="true"></i><span>42 Harbour Lane,<br>Portside, CA 90001</span></a>
+      <a href="tel:+15550142"><i class="bi bi-telephone" aria-hidden="true"></i><span>+1 555 0142</span></a>
+      <a href="mailto:hello@aquaticandco.example"><i class="bi bi-envelope" aria-hidden="true"></i><span>hello@aquaticandco.example</span></a>
+      <span class="footer-contact-item"><i class="bi bi-clock" aria-hidden="true"></i><span>Mon&ndash;Sat<br>10:00&ndash;19:00</span></span>
+    </div>
+  </div>
+  <div class="container-wide footer-bottom">
+    <span>&copy; 2026 Aquatic. All rights reserved.</span>
+    <span>42 Harbour Lane, Portside &middot; Mon&ndash;Sat 10:00&ndash;19:00 &middot; <a href="tel:+15550142">+1 555 0142</a></span>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

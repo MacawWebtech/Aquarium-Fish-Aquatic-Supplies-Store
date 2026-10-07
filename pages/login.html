@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in or Sign up | Aquatic</title>
+<meta name="description" content="Log in to your Aquatic account or create one to track orders, save favourite fish and reserve store pickups.">
+<link rel="canonical" href="https://www.aquaticandco.example/pages/login.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Log in or Sign up | Aquatic">
+<meta property="og:description" content="Visit our showroom or request a special-order fish or piece of equipment.">
+<meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/125L_planted_tank.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+
+
+<link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="container-wide topbar-inner">
+    <span class="topbar-note"><i class="bi bi-droplet-half"></i> Live arrivals every Thursday<span class="topbar-note-long"> &mdash; guaranteed healthy on delivery</span></span>
+    <div class="topbar-links">
+      <a href="tel:+15550142"><i class="bi bi-telephone"></i> +1 555 0142</a>
+      <span class="topbar-sep"></span>
+      <span class="topbar-hours"><i class="bi bi-clock"></i> Mon&ndash;Sat, 10am&ndash;7pm</span>
+      <span class="topbar-sep"></span>
+      <span class="topbar-social">
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container-wide header-inner">
+    <a href="../index.html" class="brand"><img src="../assets/images/logo.png" alt="Aquatic" class="brand-logo"></a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <div class="nav-item has-dropdown">
+        <button type="button" class="nav-link" data-dropdown-toggle aria-expanded="false" aria-haspopup="true">
+          Home <i class="bi bi-chevron-down" aria-hidden="true"></i>
+        </button>
+        <div class="nav-dropdown">
+          <a href="../index.html" class="home-card">
+            <span class="home-card-thumb"><img src="../assets/images/banner.jpg" alt="" loading="lazy"></span>
+            <span class="home-card-text"><strong>Home Page 1</strong><span>Reef hero with live tank stats</span></span>
+          </a>
+          <a href="../home-2.html" class="home-card">
+            <span class="home-card-thumb"><img src="../assets/images/banner1.jpg" alt="" loading="lazy"></span>
+            <span class="home-card-text"><strong>Home Page 2</strong><span>Split layout with featured species</span></span>
+          </a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+      <a href="fish.html">Fish</a>
+      <a href="plants.html">Aquatic Plants</a>
+      <a href="equipment.html">Equipment</a>
+      <a href="blog.html">Care Guides</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn search-toggle" data-search-toggle aria-label="Search" aria-expanded="false" aria-controls="headerSearch"><i class="bi bi-search"></i></button>
+      <button class="icon-btn wishlist-btn" aria-label="Wishlist"><i class="bi bi-heart"></i><span class="icon-badge">2</span></button>
+      <button class="icon-btn bag-btn" aria-label="Your order, 3 items" data-bag><i class="bi bi-bag"></i><span class="icon-badge" data-bag-count>3</span></button>
+      <button class="icon-btn theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
+        <i class="bi bi-sun-fill" aria-hidden="true"></i>
+        <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+      </button>
+      <a href="login.html#signup" class="btn btn-primary btn-sm header-cta">Sign up</a>
+      <button class="rtl-toggle" type="button" data-rtl-toggle aria-pressed="false">RTL</button>
+      <button class="icon-btn menu-btn" data-menu-open aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <i class="bi bi-list" style="font-size:1.5rem"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="header-search" id="headerSearch" data-search-panel>
+    <div class="header-search-inner">
+      <div class="container-wide">
+        <form role="search" onsubmit="return false;">
+          <input type="search" name="q" placeholder="Search fish, plants, tanks or filters" aria-label="Search the store">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+  <div class="mobile-nav-top">
+    <span class="brand"><img src="../assets/images/logo.png" alt="Aquatic" class="brand-logo"></span>
+    <button class="icon-btn" data-menu-close aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+  </div>
+
+  <button type="button" class="m-sub-toggle" data-sub-toggle aria-expanded="false">
+    Home <i class="bi bi-chevron-down" aria-hidden="true"></i>
+  </button>
+  <div class="mobile-sub">
+    <div>
+      <a href="../index.html" class="">Home Page 1</a>
+      <a href="../home-2.html" class="">Home Page 2</a>
+    </div>
+  </div>
+
+  <a href="about.html">About</a>
+  <a href="fish.html">Fish</a>
+  <a href="plants.html">Aquatic Plants</a>
+  <a href="equipment.html">Equipment</a>
+  <a href="blog.html">Care Guides</a>
+  <a href="contact.html">Contact</a>
+
+  <div class="mobile-actions">
+    <a href="login.html#signup" class="btn btn-primary btn-sm">Sign up</a>
+    <a href="tel:+15550142" class="btn btn-outline btn-sm m-call"><i class="bi bi-telephone"></i> Call the store</a>
+  </div>
+</nav>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container-wide">
+      <div class="crumbs"><a href="../index.html">Home</a> / My Account</div>
+      <span class="eyebrow">Your Aquatic Account</span>
+      <h1 class="font-display" style="font-size:var(--fs-h1); margin-top:.75rem;">Log in or Create an Account</h1>
+      <p style="margin-top:.75rem; max-width:560px; font-size:1.05rem;">Track fish orders and deliveries, reserve store pickups and keep a record of your tank's setup.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container-wide auth-wrap">
+      <div class="auth-card">
+        <div class="auth-tabs" role="tablist" aria-label="Account">
+          <button type="button" role="tab" id="tab-login" aria-controls="panel-login" aria-selected="true" data-auth-tab="login">Log in</button>
+          <button type="button" role="tab" id="tab-signup" aria-controls="panel-signup" aria-selected="false" data-auth-tab="signup">Sign up</button>
+        </div>
+
+        <div class="auth-panel" id="panel-login" role="tabpanel" aria-labelledby="tab-login" data-auth-panel="login">
+          <div class="form-success"><i class="bi bi-check-circle-fill"></i> You're logged in. Welcome back.</div>
+          <form data-validate novalidate action="#" method="POST">
+            <div class="form-field">
+              <label for="login-email">Email address</label>
+              <input type="email" id="login-email" name="email" autocomplete="email" required>
+              <span class="error-msg">Enter the email address you signed up with.</span>
+            </div>
+            <div class="form-field">
+              <label for="login-password">Password</label>
+              <input type="password" id="login-password" name="password" autocomplete="current-password" required>
+              <span class="error-msg">Enter your password.</span>
+            </div>
+            <div class="check-row">
+              <label><input type="checkbox" name="remember"> Keep me logged in</label>
+              <a href="contact.html">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Log in</button>
+          </form>
+          <p class="auth-alt">New to Aquatic? <button type="button" data-auth-switch="signup">Create an account</button></p>
+        </div>
+
+        <div class="auth-panel" id="panel-signup" role="tabpanel" aria-labelledby="tab-signup" data-auth-panel="signup" hidden>
+          <div class="form-success"><i class="bi bi-check-circle-fill"></i> Account created. Check your inbox to confirm your email.</div>
+          <form data-validate novalidate action="#" method="POST">
+            <div class="form-grid-2">
+              <div class="form-field">
+                <label for="su-first">First name</label>
+                <input type="text" id="su-first" name="first_name" autocomplete="given-name" required>
+                <span class="error-msg">Enter your first name.</span>
+              </div>
+              <div class="form-field">
+                <label for="su-last">Last name</label>
+                <input type="text" id="su-last" name="last_name" autocomplete="family-name">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="su-email">Email address</label>
+              <input type="email" id="su-email" name="email" autocomplete="email" required>
+              <span class="error-msg">Enter a valid email address.</span>
+            </div>
+            <div class="form-field">
+              <label for="su-password">Password</label>
+              <input type="password" id="su-password" name="password" autocomplete="new-password" minlength="8" required>
+              <span class="error-msg">Choose a password of at least 8 characters.</span>
+            </div>
+            <div class="form-field">
+              <label for="su-tank">What do you keep? <span style="font-weight:500; color:var(--text-muted);">(optional)</span></label>
+              <select id="su-tank" name="tank_type">
+                <option value="">Select one</option>
+                <option>Freshwater community</option>
+                <option>Planted aquascape</option>
+                <option>Marine / reef</option>
+                <option>Coldwater / goldfish</option>
+                <option>Not started yet</option>
+              </select>
+            </div>
+            <div class="check-row">
+              <label><input type="checkbox" name="newsletter" checked> Email me about new arrivals</label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Create account</button>
+          </form>
+          <p class="auth-alt">Already have an account? <button type="button" data-auth-switch="login">Log in</button></p>
+        </div>
+      </div>
+
+      <div class="auth-media">
+        <img src="../assets/images/planty.jpg" alt="A planted aquarium in a rimless glass tank">
+        <div class="am-body">
+          <h2>What you get with an account</h2>
+          <ul>
+            <li><i class="bi bi-check-circle-fill"></i> Order history and live delivery tracking</li>
+            <li><i class="bi bi-check-circle-fill"></i> Reserve fish for free store pickup</li>
+            <li><i class="bi bi-check-circle-fill"></i> First look at Thursday arrivals</li>
+            <li><i class="bi bi-check-circle-fill"></i> Saved tank profiles for compatibility advice</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container-wide footer-top">
+    <div class="footer-brand">
+      <span class="brand footer-brand-logo"><img src="../assets/images/logo.png" alt="Aquatic" class="brand-logo"></span>
+      <p>A specialist store for aquarium fish, aquatic plants and tank supplies — freshwater, marine and planted, since 2008.</p>
+      <span class="footer-social-label">Follow us</span>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Aquatic on Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Aquatic on Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Aquatic on YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="Aquatic on TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.pinterest.com/" target="_blank" rel="noopener" aria-label="Aquatic on Pinterest"><i class="bi bi-pinterest"></i></a>
+        <a href="https://wa.me/15550142" target="_blank" rel="noopener" aria-label="Message Aquatic on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+    <div>
+      <h5>Shop</h5>
+      <a href="fish.html">Aquarium Fish</a>
+      <a href="plants.html">Aquatic Plants</a>
+      <a href="equipment.html">Tanks &amp; Equipment</a>
+      <a href="equipment.html#testing">Water Care</a>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Care Guides</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h5>Orders</h5>
+      <a href="contact.html">Delivery &amp; Pickup</a>
+      <a href="contact.html#special-order">Special Orders</a>
+      <a href="contact.html">Live Arrival Guarantee</a>
+      <a href="login.html">My Account</a>
+    </div>
+    <div class="footer-contact">
+      <h5>Contact</h5>
+      <a href="https://maps.google.com/?q=42+Harbour+Lane+Portside+CA+90001" target="_blank" rel="noopener"><i class="bi bi-geo-alt" aria-hidden="true"></i><span>42 Harbour Lane,<br>Portside, CA 90001</span></a>
+      <a href="tel:+15550142"><i class="bi bi-telephone" aria-hidden="true"></i><span>+1 555 0142</span></a>
+      <a href="mailto:hello@aquaticandco.example"><i class="bi bi-envelope" aria-hidden="true"></i><span>hello@aquaticandco.example</span></a>
+      <span class="footer-contact-item"><i class="bi bi-clock" aria-hidden="true"></i><span>Mon&ndash;Sat<br>10:00&ndash;19:00</span></span>
+    </div>
+  </div>
+  <div class="container-wide footer-bottom">
+    <span>&copy; 2026 Aquatic. All rights reserved.</span>
+    <span>42 Harbour Lane, Portside &middot; Mon&ndash;Sat 10:00&ndash;19:00 &middot; <a href="tel:+15550142">+1 555 0142</a></span>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
