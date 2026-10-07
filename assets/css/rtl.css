@@ -1,0 +1,47 @@
+/* ============================
+   RTL SUPPORT
+   Loaded only when the page has dir="rtl" (Arabic / Hebrew).
+   Most spacing/positioning in style.css already uses logical
+   properties (inset-inline-start/end, margin-inline, padding-inline)
+   which flip automatically. This file handles the remaining
+   physical-direction exceptions: transforms, icon mirroring,
+   background gradients and non-logical positioning.
+   ============================ */
+
+[dir="rtl"] body{ text-align:right; }
+
+/* Icons that imply direction of travel should mirror */
+[dir="rtl"] .btn-link i.bi-arrow-right,
+[dir="rtl"] .icon-flip{ transform:scaleX(-1); }
+
+/* Hero light-ray angle mirrors so it still reads as coming from
+   the same physical window-light direction */
+[dir="rtl"] .light-ray{ transform:rotate(-12deg); }
+
+/* Gradient overlays authored with left/right keywords */
+[dir="rtl"] .world-panel::before{
+  background:linear-gradient(0deg, rgba(3,25,32,.86) 0%, rgba(3,25,32,.15) 55%, rgba(3,25,32,.05) 100%);
+}
+[dir="rtl"] .consult-media::before{ background:linear-gradient(270deg, var(--clr-deep) 0%, transparent 32%); }
+
+/* Journey connecting line + numbered steps read right-to-left */
+[dir="rtl"] .journey-steps{ direction:rtl; }
+
+/* Mobile off-canvas already flips via transform rule in style.css */
+
+/* Form fields, selects: ensure native select arrow sits on the
+   correct logical side in browsers that support it */
+[dir="rtl"] select{ background-position:left .9rem center; }
+
+/* Testimonial / arrivals horizontal scroll starts from the right */
+[dir="rtl"] .arrivals-track,
+[dir="rtl"] .testi-wrap{ direction:rtl; }
+
+/* Skeleton shimmer sweep direction */
+[dir="rtl"] .skeleton-block{ animation-direction:reverse; }
+
+/* Countdown / stat rows keep numeral order LTR even in RTL copy */
+[dir="rtl"] .countdown,
+[dir="rtl"] .param-grid{ direction:ltr; }
+[dir="rtl"] .countdown-item,
+[dir="rtl"] .param-item{ direction:rtl; }
